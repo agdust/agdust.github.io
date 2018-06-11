@@ -1,0 +1,21 @@
+<svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 232.52 168.57">
+  <defs>
+    <style>
+    .cls-1 {
+      fill: #bab4e6;
+    }
+
+    .cls-2 {
+      font-size: 72px;
+      fill: #bab4e6;
+      stroke: #bab4e6;
+      stroke-miterlimit: 10;
+      stroke-width: 7px;
+      font-family: Oxygen, Oxygen;
+    }
+    </style>
+  </defs>
+  <title>sql</title>
+  <path class="cls-1" d="M227.41,21.62H56c-17.14,0-30.24,13.1-30.24,30.24v70.56c0,17.14,13.1,30.24,30.24,30.24H227.41c17.14,0,30.24-13.1,30.24-30.24V51.86C257.66,34.73,244.55,21.62,227.41,21.62Zm20.16,100.8a20.22,20.22,0,0,1-20.16,20.16H56a20.22,20.22,0,0,1-20.16-20.16V51.86A20.22,20.22,0,0,1,56,31.7H227.41a20.22,20.22,0,0,1,20.16,20.16Z" transform="translate(-25.21 -21.62)" />
+  <text class="cls-2" transform="translate(33.22 91.03)">S Q L</text>
+</svg>

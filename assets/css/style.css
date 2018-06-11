@@ -196,6 +196,10 @@ p.highlight {
   width: 45%;
 }
 
+.progress-bar.sql {
+  width: 52%;
+}
+
 .progress-bar.linux {
   width: 55%;
 }
