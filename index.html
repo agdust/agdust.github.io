@@ -7,194 +7,238 @@
   <title>Некрытов Михаил</title>
   <link href='https://fonts.googleapis.com/css?family=Roboto:300,400&amp;subset=cyrillic' rel='stylesheet'>
   <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css' integrity='sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb' crossorigin='anonymous'>
-  <link rel='stylesheet' href='/assets/css/style.css'>
+  <link rel='stylesheet' href='assets/css/style.css'>
   <link rel='icon' type='image/png' href='/favicon.png'>
 </head>
 
 <body data-spy='scroll' data-target='#menu' data-offset='1'>
   <nav class='nav flex-column col-md-2 d-none d-md-block' id='menu'>
-    <ul>
-      <li class='nav-item'><a class='nav-link active' href='#info'>Начало</a></li>
-      <li class='nav-item'><a class='nav-link' href='#about'>Обо мне</a></li>
-      <li class='nav-item'><a class='nav-link' href='#skills'>Мои навыки</a></li>
-      <li class='nav-item'><a class='nav-link' href='#contacts'>Мои контакты</a></li>
-    </ul>
+  <ul id='menu-ul'>
+    <li class='nav-item'><a class='nav-link active' href='#info' data-scrollspy='#info'>Начало</a></li>
+    <li class='nav-item'><a class='nav-link' href='#about' data-scrollspy='#about'>Обо мне</a></li>
+    <li class='nav-item'><a class='nav-link' href='#skills' data-scrollspy='#skills'>Мои навыки</a></li>
+    <li class='nav-item'><a class='nav-link' href='#projects' data-scrollspy='#projects'>Мои проекты</a></li>
+    <li class='nav-item'><a class='nav-link' href='#contacts' data-scrollspy='#contacts'>Мои контакты</a></li>
+  </ul>
   </nav>
   <main class='main-content col-md-8 offset-md-2 col-12' role='main'>
-    <section class='page-element wrapper' id='info'>
-      <div class='main-info content'>
-        <img src='/assets/images/photo.jpg' alt='Моё фото' class='photo' />
-        <h1 class='name h1 text-center'>Некрытов Михаил</h1>
-        <!-- Семантически это h2, но визуально выглядит лучше как h5 -->
-        <h2 class='description h5 text-center'>Junior JS-PHP разработчик</h2>
+  <section class='page-element wrapper scrollspy' id='info'>
+    <div class='main-info content'>
+    <img src='assets/images/photo.jpg' alt='Моё фото' class='photo' />
+    <h1 class='name h1 text-center'>Некрытов Михаил</h1>
+    <!-- Семантически это h2, но визуально выглядит лучше как h5 -->
+    <h2 class='description h5 text-center'>Junior JS-PHP разработчик</h2>
+    </div>
+  </section>
+
+  <section class='page-element container-fluid scrollspy' id='about'>
+    <div class='text-about content'>
+    <h3 class='h3 text-center'>Обо мне</h3>
+    <p>
+      Я — начинающий web-разработчик стандартного стека js-php. Но помимо этого также интересовался и другими языками web'а, например Ruby или Python. Впервые меня заинтересовала разработка еще в 12 лет, а с 15 лет я уже хорошо ориентировался в технологиях и программировании. Сейчас мне 18 и моих знаний хватает для того чтобы семантически и адаптивно сверстать сайт со сложной версткой и грамотно написать для него backend.
+    </p>
+    <p>
+      Учиться и тренироваться мне всегда помогал искренний интерес к программированию и самому обучению, а также друзья из команды в которой я состою в роли junior'а и учавствую в разработке интересных проектов, таких как <a href="https://ww.vk.com/kursomir"></a><strong>«Курсомир»</strong>. Благодаря им я: 
+    </p>
+      <ul>
+      <li>усвоил много правил и best practices в написании кода</li>
+      <li>научился придерживаться общего стиля программирования</li>
+      <li>гораздо глубже понял работу html/js учавствуя в разработке небольшой web-игры</li>
+      <li>понял важность и изучил основы проектирования UI/UX</li>
+      <li>а также освоил много таких инструментов как git и github, linux, bash, Ruby, Ruby On Rails, Vuejs и других</li>
+      </ul>
+    <p>
+      Сейчас я частично учавствую в разработке нового интересного проекта, попутно осваивая новые технологии и библиотеки, а также уже более полугода занимаюсь поддержкой, развитием и рефакторингом одного старого сайта (он был сделан разными людьми с использованием разных методологий и похож на страшный сон разработчика, поэтому этот факт считаю своим подвигом).
+    <p class='highlight'>
+      А также ищу компанию которой пригодились бы мои навыки и в которой я мог бы развиваться профессионально
+    </p>
+    </p>
+    </div>
+  </section>
+
+  <section class='page-element container-fluid scrollspy' id='skills'>
+    <div class="my-skills content">
+    <h3 class='h3 text-center'>Мои навыки</h3>
+    <div class='row tech-line align-items-center justify-content-between'>
+      <div class='tech-icon two-icons col-3'>
+      <img src='assets/images/html5.svg' alt='Git' class='img-fluid'>
+      <img src='assets/images/css3.svg' alt='Git' class='img-fluid'>
       </div>
-    </section>
-
-    <section class='page-element container-fluid' id='about'>
-      <div class='text-about content'>
-        <h3 class='h3 text-center'>Обо мне</h3>
-        <p>
-          Я — начинающий web-разработчик стандартного стека js-php. Но помимо этого также интересовался и другими языками web'а, например Ruby или Python. Впервые меня заинтересовала разработка еще в 12 лет, а с 15 лет я уже хорошо ориентировался в технологиях и программировании. Сейчас мне 18 и моих знаний хватает для того чтобы семантически и адаптивно сверстать сайт со сложной версткой и грамотно написать для него backend.
-        </p>
-        <p>
-          Учиться и тренироваться мне всегда помогал искренний интерес к программированию и самому обучению, а также друзья из команды в которой я состою в роли junior'а и учавствую в разработке интересных проектов, таких как <a href="https://ww.vk.com/kursomir"></a><strong>«Курсомир»</strong>. Благодаря им я: 
-        </p>
-          <ul>
-            <li>усвоил много правил и best practices в написании кода</li>
-            <li>научился придерживаться общего стиля программирования</li>
-            <li>гораздо глубже понял работу html/js учавствуя в разработке небольшой web-игры</li>
-            <li>понял важность и изучил основы проектирования UI/UX</li>
-            <li>а также освоил много таких инструментов как git и github, linux, bash, Ruby, Ruby On Rails, Vuejs и других</li>
-          </ul>
-        <p>
-          Сейчас я частично учавствую в разработке нового интересного проекта, попутно осваивая новые технологии и библиотеки, а также уже более полугода занимаюсь поддержкой, развитием и рефакторингом одного старого сайта (он был сделан разными людьми с использованием разных методологий и похож на страшный сон разработчика, поэтому этот факт считаю своим подвигом).
-        <p class='highlight'>
-          А также ищу компанию которой пригодились бы мои навыки и в которой я мог бы развиваться профессионально
-        </p>
-        </p>
+      <div class="progress-container col-8">
+      <span class='junior-tip'>Junior</span>
+      <div class='progress'>
+        <div class='progress-bar htmlcss' role='progressbar' aria-valuenow='25' aria-valuemin='0' aria-valuemax='100'></div>
       </div>
-    </section>
-
-    <section class='page-element container-fluid' id='skills'>
-      <div class="my-skills content">
-        <h3 class='h3 text-center'>Мои навыки</h3>
-        <div class='row tech-line align-items-center justify-content-between'>
-          <div class='tech-icon two-icons col-3'>
-            <img src='/assets/images/html5.svg' alt='Git' class='img-fluid'>
-            <img src='/assets/images/css3.svg' alt='Git' class='img-fluid'>
-          </div>
-          <div class="progress-container col-8">
-            <span class='junior-tip'>Junior</span>
-            <div class='progress'>
-              <div class='progress-bar htmlcss' role='progressbar' aria-valuenow='25' aria-valuemin='0' aria-valuemax='100'></div>
-            </div>
-          </div>
-        </div>
-
-        <div class='row tech-line align-items-center justify-content-between'>
-          <div class='tech-icon col-3'>
-            <img src='/assets/images/js.svg' alt='JS' class='img-fluid'>
-          </div>
-          <div class='progress col-8'>
-            <div class='progress-bar js' role='progressbar' aria-valuenow='25' aria-valuemin='0' aria-valuemax='100'></div>
-          </div>
-        </div>
-
-        <div class='row tech-line align-items-center justify-content-between'>
-          <div class='tech-icon col-3'>
-            <img src='/assets/images/php.svg' alt='PHP' class='img-fluid'>
-          </div>
-          <div class='progress col-8'>
-            <div class='progress-bar php' role='progressbar' aria-valuenow='25' aria-valuemin='0' aria-valuemax='100'></div>
-          </div>
-        </div>
-
-        <div class='row tech-line align-items-center justify-content-between'>
-          <div class='tech-icon col-3'>
-            <img src='/assets/images/ruby.svg' alt='Ruby' class='img-fluid'>
-          </div>
-          <div class='progress col-8'>
-            <div class='progress-bar ruby' role='progressbar' aria-valuenow='25' aria-valuemin='0' aria-valuemax='100'></div>
-          </div>
-        </div>
-
-        <div class='row tech-line align-items-center justify-content-between'>
-          <div class='tech-icon col-3'>
-            <img src='/assets/images/sql.svg' alt='Git' class='img-fluid'>
-          </div>
-          <div class='progress col-8'>
-            <div class='progress-bar sql' role='progressbar' aria-valuenow='25' aria-valuemin='0' aria-valuemax='100'></div>
-          </div>
-        </div>
-
-        <div class='row tech-line align-items-center justify-content-between'>
-          <div class='tech-icon col-3'>
-            <img src='/assets/images/linux.svg' alt='Linux' class='img-fluid'>
-          </div>
-          <div class='progress col-8'>
-            <div class='progress-bar linux' role='progressbar' aria-valuenow='25' aria-valuemin='0' aria-valuemax='100'></div>
-          </div>
-        </div>
-
-        <div class='row tech-line align-items-center justify-content-between'>
-          <div class='tech-icon col-3'>
-            <img src='/assets/images/git.svg' alt='Git' class='img-fluid'>
-          </div>
-          <div class='progress col-8'>
-            <div class='progress-bar git' role='progressbar' aria-valuenow='25' aria-valuemin='0' aria-valuemax='100'></div>
-          </div>
-        </div>
-
-        <div class='row tech-line align-items-center justify-content-between'>
-          <div class='tech-icon col-3'>
-            <img src='/assets/images/vue.svg' alt='VueJS' class='img-fluid'>
-          </div>
-          <div class='progress col-8'>
-            <div class='progress-bar vue' role='progressbar' aria-valuenow='25' aria-valuemin='0' aria-valuemax='100'></div>
-          </div>
-        </div>
       </div>
-    </section>
+    </div>
 
-    <section class='page-element container-fluid' id='contacts'>
-      <div class='contact-me text-center content'>
-        <h3 class='h3'>Мои контакты</h3>
-        <div class='contact-links'>
-          <a class='link' href='mailto:mihail.nekrytov@gmail.com'>
-            <img class='icon' src='/assets/images/mail.svg' alt='Моя электронная почта'>
-            mihail.nekrytov@gmail.com
-          </a>
-          <a class='link' href='https://www.telegram.me/agdust'>
-            <img class='icon' src='/assets/images/telegram.svg' alt='Мой аккаунт в telegram'>
-            telegram.me/agdust
-          </a>
-          <a class='link' href='https://www.github.com/agdust'>
-            <img class='icon' src='/assets/images/github.svg' alt='Моя страница на github'>
-            github.com/agdust
-          </a>
-          <a class='link' href='https://www.vk.com/agdust'>
-            <img class='icon' src='/assets/images/vk.svg' alt='Моя страница ВКонтакте'>
-            vk.com/agdust
-          </a>
-        </div>
+    <div class='row tech-line align-items-center justify-content-between'>
+      <div class='tech-icon col-3'>
+      <img src='assets/images/js.svg' alt='JS' class='img-fluid'>
       </div>
-    </section>
+      <div class='progress col-8'>
+      <div class='progress-bar js' role='progressbar' aria-valuenow='25' aria-valuemin='0' aria-valuemax='100'></div>
+      </div>
+    </div>
+
+    <div class='row tech-line align-items-center justify-content-between'>
+      <div class='tech-icon col-3'>
+      <img src='assets/images/php.svg' alt='PHP' class='img-fluid'>
+      </div>
+      <div class='progress col-8'>
+      <div class='progress-bar php' role='progressbar' aria-valuenow='25' aria-valuemin='0' aria-valuemax='100'></div>
+      </div>
+    </div>
+
+    <div class='row tech-line align-items-center justify-content-between'>
+      <div class='tech-icon col-3'>
+      <img src='assets/images/ruby.svg' alt='Ruby' class='img-fluid'>
+      </div>
+      <div class='progress col-8'>
+      <div class='progress-bar ruby' role='progressbar' aria-valuenow='25' aria-valuemin='0' aria-valuemax='100'></div>
+      </div>
+    </div>
+
+    <div class='row tech-line align-items-center justify-content-between'>
+      <div class='tech-icon col-3'>
+      <img src='assets/images/sql.svg' alt='Git' class='img-fluid'>
+      </div>
+      <div class='progress col-8'>
+      <div class='progress-bar sql' role='progressbar' aria-valuenow='25' aria-valuemin='0' aria-valuemax='100'></div>
+      </div>
+    </div>
+
+    <div class='row tech-line align-items-center justify-content-between'>
+      <div class='tech-icon col-3'>
+      <img src='assets/images/linux.svg' alt='Linux' class='img-fluid'>
+      </div>
+      <div class='progress col-8'>
+      <div class='progress-bar linux' role='progressbar' aria-valuenow='25' aria-valuemin='0' aria-valuemax='100'></div>
+      </div>
+    </div>
+
+    <div class='row tech-line align-items-center justify-content-between'>
+      <div class='tech-icon col-3'>
+      <img src='assets/images/git.svg' alt='Git' class='img-fluid'>
+      </div>
+      <div class='progress col-8'>
+      <div class='progress-bar git' role='progressbar' aria-valuenow='25' aria-valuemin='0' aria-valuemax='100'></div>
+      </div>
+    </div>
+
+    <div class='row tech-line align-items-center justify-content-between'>
+      <div class='tech-icon col-3'>
+      <img src='assets/images/vue.svg' alt='VueJS' class='img-fluid'>
+      </div>
+      <div class='progress col-8'>
+      <div class='progress-bar vue' role='progressbar' aria-valuenow='25' aria-valuemin='0' aria-valuemax='100'></div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <section class='page-element container-fluid scrollspy' id='projects'>
+    <div class="my-projects content">
+    <h3 class='h3 text-center'>Проекты в которых я участвовал</h3>
+
+    <div class='row align-items-center justify-content-between'>
+      <p class="project">
+        <a href='https://github.com/AgDust/kursomir_site' class="project-name kursomir">Курсомир</a>
+        <span class="project-description">
+          — команда, поставившая себе цель перевести лекции MIT на русский язык. Для этого велась разработка сайта на Ruby on Rails, в которой я принимал участие. Правда, небольшое, так как это было мое первое знакомство с языком и фреймворком. А еще я немного писал руководства для участников проекта
+        </span>
+      </p>
+
+      <p class="project">
+        <a href='https://kosari.koto.fun' class="project-name kosari">Косари</a>
+        <span class="project-description">
+          — простенький онлайн runner, созданный бывшей командой Курсомира чтобы отдохнуть от серьезности и заняться чем-то веселым. Здесь благодаря опыту ребят я много узнал о веб-играх и особенностях их разработки, а также понял многие тонкости работы html и js
+        </span>
+      </p>
+
+      <p class="project">
+        <a href='https://master-visit.ru' class="project-name master-visit">Мастер-визит</a>
+        <span class="project-description">
+          — агрегатор мастеров красоты в Москве и Московской области. Ему уже больше 5 лет, и за это время разработкой занимались разные люди, поэтому его поддержка и развитие иногда вызывают трудности. Сайт написан без использования библиотек или фреймворков, поэтому благодаря ему я понял насколько это важно, следовать стандартам и по максимуму использовать имеющиемя средства, не изобретая велосипедов
+        </span>
+      </p>
+    </div>
+  </section>
+
+  <section class='page-element container-fluid scrollspy' id='contacts'>
+    <div class='contact-me text-center content'>
+    <h3 class='h3'>Мои контакты</h3>
+    <div class='contact-links'>
+      <a class='link' href='mailto:mihail.nekrytov@gmail.com'>
+      <img class='icon' src='assets/images/mail.svg' alt='Моя электронная почта'>
+      mihail.nekrytov@gmail.com
+      </a>
+      <a class='link' href='https://www.telegram.me/agdust'>
+      <img class='icon' src='assets/images/telegram.svg' alt='Мой аккаунт в telegram'>
+      telegram.me/agdust
+      </a>
+      <a class='link' href='https://www.github.com/agdust'>
+      <img class='icon' src='assets/images/github.svg' alt='Моя страница на github'>
+      github.com/agdust
+      </a>
+      <a class='link' href='https://www.vk.com/agdust'>
+      <img class='icon' src='assets/images/vk.svg' alt='Моя страница ВКонтакте'>
+      vk.com/agdust
+      </a>
+    </div>
+    </div>
+  </section>
   </main>
-  <script src='https://code.jquery.com/jquery-3.2.1.min.js'></script>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js' integrity='sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh' crossorigin='anonymous'></script>
-  <script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js' integrity='sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ' crossorigin='anonymous'></script>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js'></script>
-  <script src='/assets/js/scroller.js'></script>
-  <!-- Yandex.Metrika counter -->
-  <script type='text/javascript'>
-  (function(d, w, c) {
-    (w[c] = w[c] || []).push(function() {
-      try {
-        w.yaCounter46841490 = new Ya.Metrika({
-          id: 46841490,
-          clickmap: true,
-          trackLinks: true,
-          accurateTrackBounce: true,
-          webvisor: true
-        });
-      } catch (e) {}
+
+  <script src='assets/js/simple-scrollspy.js'></script>
+  <script>
+  window.onload = function () {
+    scrollSpy('#menu-ul', {
+    offset: 0, // in pixels
+    menuActiveTarget: 'li > a',
+    sectionClass: '.scrollspy',
+    activeClass: 'active',
+    })
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+      behavior: 'smooth'
+      });
     });
-
-    var n = d.getElementsByTagName('script')[0],
-      s = d.createElement('script'),
-      f = function() { n.parentNode.insertBefore(s, n); };
-    s.type = 'text/javascript';
-    s.async = true;
-    s.src = 'https://mc.yandex.ru/metrika/watch.js';
-
-    if (w.opera == '[object Opera]') {
-      d.addEventListener('DOMContentLoaded', f, false);
-    } else { f(); }
-  })(document, window, 'yandex_metrika_callbacks');
+    });
+  }
   </script>
-  <noscript>
-    <div><img src='https://mc.yandex.ru/watch/46841490' style='position:absolute; left:-9999px;' alt='' /></div>
-  </noscript>
+
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript" >
+    (function (d, w, c) {
+      (w[c] = w[c] || []).push(function() {
+        try {
+          w.yaCounter51245005 = new Ya.Metrika2({
+            id:51245005,
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true
+          });
+        } catch(e) { }
+      });
+
+      var n = d.getElementsByTagName("script")[0],
+        s = d.createElement("script"),
+        f = function () { n.parentNode.insertBefore(s, n); };
+      s.type = "text/javascript";
+      s.async = true;
+      s.src = "https://mc.yandex.ru/metrika/tag.js";
+
+      if (w.opera == "[object Opera]") {
+        d.addEventListener("DOMContentLoaded", f, false);
+      } else { f(); }
+    })(document, window, "yandex_metrika_callbacks2");
+  </script>
+  <noscript><div><img src="https://mc.yandex.ru/watch/51245005" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
   <!-- /Yandex.Metrika counter -->
 </body>
 

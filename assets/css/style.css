@@ -233,6 +233,22 @@ p.highlight {
   text-align: center;
 }
 
+.project .project-name {
+  font-weight: 500;
+}
+
+.project .project-name.kursomir {
+  color: #e2412b;
+}
+
+.project .project-name.kosari {
+  color: #02a3a0;
+}
+
+.project .project-name.master-visit {
+  color: #f29291;
+}
+
 .contact-links {
   width: 90%;
   margin: 0 auto;
