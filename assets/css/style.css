@@ -143,6 +143,7 @@ p.highlight {
 
 .tech-line {
   margin: 1rem 0;
+  max-height: 76px;
 }
 
 .tech-icon {
@@ -150,6 +151,10 @@ p.highlight {
   line-height: 4rem;
 
   text-align: center;
+}
+
+.tech-icon > img {
+  max-height: 76px;
 }
 
 .tech-icon.two-icons > img {
@@ -178,10 +183,28 @@ p.highlight {
   background-color: #86a3b1;
 }
 
+.progress.senior:after {
+  display: none;
+}
+
 .progress > .progress-bar {
   height: 100%;
 
   background-color: #a6e22c;
+}
+
+.progress.senior > .progress-bar {
+  background-color: #e6f449;
+}
+
+.progress.senior .senior-label {
+  position: absolute;
+  top: -5px;
+  width: 100%;
+  text-align: center;
+  font-weight: 500;
+  font-size: 18px;
+  color: #0d4d6d;
 }
 
 .progress-bar.htmlcss {
@@ -200,6 +223,10 @@ p.highlight {
   width: 52%;
 }
 
+.progress-bar.ruby {
+  width: 45%;
+}
+
 .progress-bar.linux {
   width: 55%;
 }
@@ -212,8 +239,8 @@ p.highlight {
   width: 20%;
 }
 
-.progress-bar.ruby {
-  width: 45%;
+.progress-bar.vue {
+  width: 100%;
 }
 
 .progress-container {
