@@ -141,6 +141,16 @@ p.highlight {
   background-color: #c02623;
 }
 
+p.highlight.-blue {
+  background-color: #069cb9;
+}
+
+p.highlight.-blue > a {
+  background-color: #069cb9;
+  color: #c6e3ff;
+  text-decoration: underline;
+}
+
 .tech-line {
   margin: 1rem 0;
   max-height: 76px;
@@ -208,11 +218,11 @@ p.highlight {
 }
 
 .progress-bar.htmlcss {
-  width: 60%;
+  width: 75%;
 }
 
 .progress-bar.js {
-  width: 60%;
+  width: 70%;
 }
 
 .progress-bar.php {
@@ -228,15 +238,15 @@ p.highlight {
 }
 
 .progress-bar.linux {
-  width: 55%;
-}
-
-.progress-bar.git {
   width: 60%;
 }
 
+.progress-bar.git {
+  width: 80%;
+}
+
 .progress-bar.vue {
-  width: 20%;
+  width: 60%;
 }
 
 .progress-bar.google {
