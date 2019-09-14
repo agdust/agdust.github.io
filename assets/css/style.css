@@ -152,8 +152,16 @@ p.highlight.-blue > a {
   text-decoration: underline;
 }
 
+.delimiter {
+  height: 1px;
+  width: 100%;
+  background-color: #bab4e6;
+  margin: 3rem 0;
+  opacity: 0.65;
+}
+
 .tech-line {
-  margin: 1rem 0;
+  margin: 1.5rem 0;
   max-height: 76px;
 }
 
@@ -243,15 +251,23 @@ p.highlight.-blue > a {
 }
 
 .progress-bar.git {
-  width: 80%;
+  width: 90%;
 }
 
 .progress-bar.vue {
-  width: 60%;
+  width: 75%;
 }
 
 .progress-bar.google {
   width: 100%;
+}
+
+.progress-bar.react {
+  width: 25%;
+}
+
+.progress-bar.react-native {
+  width: 25%;
 }
 
 .progress-container {
