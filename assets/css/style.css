@@ -133,6 +133,15 @@ nav > ul {
   border-radius: 50%;
 }
 
+.download-link-container {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.download-link:not(:last-of-type) {
+  margin-right: 0.5rem;
+}
+
 p.highlight {
   padding: 10px;
 
