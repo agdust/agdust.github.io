@@ -310,11 +310,23 @@ p.highlight.-blue > a {
 }
 
 .project .project-name.kosari {
-  color: #02a3a0;
+  color: #506d68;
 }
 
 .project .project-name.master-visit {
   color: #f29291;
+}
+
+.project .project-name.chimvest {
+  color: #f36f21;
+}
+
+.project .project-name.sciberia {
+  color: #1955ac;
+}
+
+.project .project-name.catapod {
+  color: #029f9f;
 }
 
 .contact-links {
