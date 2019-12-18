@@ -142,6 +142,12 @@ nav > ul {
   margin-right: 0.5rem;
 }
 
+.maintool-hl {
+  background-color: #86a3b1;
+  color: #062331;
+  padding: 0 5px;
+}
+
 p.highlight {
   padding: 10px;
 
@@ -171,7 +177,14 @@ p.highlight.-blue > a {
 
 .tech-line {
   margin: 1.5rem 0;
-  max-height: 76px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tech-line--main {
+  background-color: #86a3b1;
+  color: #062331;
+  padding: 20px 0;
 }
 
 .tech-icon {
@@ -185,105 +198,10 @@ p.highlight.-blue > a {
   max-height: 76px;
 }
 
-.tech-icon.two-icons > img {
-  width: 50%;
-}
-
-.progress {
+.tech-desc-title {
   display: block;
-
-  margin: 0;
-  padding: 0;
-}
-
-.progress:after {
-  position: absolute;
-  top: 0;
-  left: calc(50% - 3px);
-
-  display: block;
-
-  width: 6px;
-  height: 100%;
-
-  content: '';
-
-  background-color: #86a3b1;
-}
-
-.progress.senior:after {
-  display: none;
-}
-
-.progress > .progress-bar {
-  height: 100%;
-
-  background-color: #a6e22c;
-}
-
-.progress.senior > .progress-bar {
-  background-color: #e6f449;
-}
-
-.progress.senior .senior-label {
-  position: absolute;
-  top: -5px;
-  width: 100%;
-  text-align: center;
-  font-weight: 500;
+  font-weight: bold;
   font-size: 18px;
-  color: #0d4d6d;
-}
-
-.progress-bar.htmlcss {
-  width: 75%;
-}
-
-.progress-bar.js {
-  width: 75%;
-}
-
-.progress-bar.php {
-  width: 35%;
-}
-
-.progress-bar.sql {
-  width: 52%;
-}
-
-.progress-bar.ruby {
-  width: 25%;
-}
-
-.progress-bar.linux {
-  width: 60%;
-}
-
-.progress-bar.git {
-  width: 90%;
-}
-
-.progress-bar.vue {
-  width: 75%;
-}
-
-.progress-bar.google {
-  width: 100%;
-}
-
-.progress-bar.react {
-  width: 25%;
-}
-
-.progress-bar.react-native {
-  width: 25%;
-}
-
-.progress-container {
-  position: relative;
-
-  margin: 0;
-  padding: 0;
 }
 
 .junior-tip {
