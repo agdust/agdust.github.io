@@ -6,13 +6,12 @@
   <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
   <title>Некрытов Михаил — Frontend Developer</title>
   <link href='https://fonts.googleapis.com/css?family=Roboto:300,400&amp;subset=cyrillic' rel='stylesheet'>
-  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css' integrity='sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb' crossorigin='anonymous'>
   <link rel='stylesheet' href='assets/css/style.css'>
   <link rel='icon' type='image/png' href='/favicon.png'>
 </head>
 
 <body data-spy='scroll' data-target='#menu' data-offset='1'>
-  <nav class='nav flex-column col-md-2 d-none d-md-block' id='menu'>
+  <nav class='nav' id='menu'>
     <ul id='menu-ul'>
       <li class='nav-item'><a class='nav-link active' href='#info' data-scrollspy='#info'>Начало</a></li>
       <li class='nav-item'><a class='nav-link' href='#about' data-scrollspy='#about'>Обо мне</a></li>
@@ -21,12 +20,13 @@
       <li class='nav-item'><a class='nav-link' href='#contacts' data-scrollspy='#contacts'>Контакты</a></li>
     </ul>
   </nav>
-  <main class='main-content col-lg-8 offset-md-2 col-md-9 col-12' role='main'>
-  <section class='page-element wrapper scrollspy' id='info'>
+
+  <main class='main-content' role='main'>
+  <section class='page-element scrollspy' id='info'>
     <div class='main-info content'>
     <img src='assets/images/photo.jpg' alt='Моё фото' class='photo' />
-    <h1 class='name h1 text-center'>Некрытов Михаил</h1>
-    <h2 class='description h5 text-center'>Frontend Developer</h2>
+    <h1 class='name'>Некрытов Михаил</h1>
+    <h2 class='description'>Frontend Developer</h2>
     <div class='download-link-container'>
       <p>
         Скачать
@@ -42,41 +42,41 @@
     </div>
   </section>
 
-  <section class='page-element container-fluid scrollspy' id='about'>
+  <section class='page-element scrollspy' id='about'>
     <div class='text-about content'>
-    <h3 class='h3 text-center'>Обо мне</h3>
-    <p>
-      Я — Frontend-разработчик. Мой основной инструмент это <span class="maintool-hl"><strong>Vue</strong></span>, но еще я работаю с <span class="maintool-hl"><strong>React'ом</strong></span> и немного с <strong>React-native</strong>. На базовом уровне знаю <strong>Ruby</strong> и <strong>Php</strong>. Любительской разработкой занимаюсь более 5 лет, профессиональной — около года.
-      В данный момент работаю в компании <a href="https://catapod.xyz">Catapod</a>
-    </p>
-    <!-- <p class='highlight'>
-      А также ищу компанию которой пригодились бы мои навыки и в которой я мог бы развиваться профессионально
-    </p> -->
-    </p>
+      <h3>Обо мне</h3>
+      <p>
+        Я — Frontend-разработчик. Мой основной инструмент это <span class="maintool-hl"><strong>Vue</strong></span>, но еще я работаю с <span class="maintool-hl"><strong>React'ом</strong></span> и немного с <strong>React-native</strong>. На базовом уровне знаю <strong>Ruby</strong> и <strong>Php</strong>. Любительской разработкой занимаюсь более 5 лет, профессиональной — около года.
+        В данный момент работаю в компании <a href="https://catapod.xyz">Catapod</a>
+      </p>
+      <!-- <p class='highlight'>
+        А также ищу компанию которой пригодились бы мои навыки и в которой я мог бы развиваться профессионально
+      </p> -->
+      </p>
     </div>
   </section>
 
-  <section class='page-element container-fluid scrollspy' id='skills'>
+  <section class='page-element scrollspy' id='skills'>
     <div class="my-skills content">
-      <h3 class='h3 text-center'>Технологии</h3>
+      <h3>Технологии</h3>
 
       <!-- Vue -->
-      <div class='row tech-line tech-line--main'>
-        <div class='tech-icon col-3'>
+      <div class='tech-line tech-line--main'>
+        <div class='tech-icon vue'>
           <img src='assets/images/vue.svg' alt='VueJS' class='img-fluid'>
         </div>
-        <div class="tech-desc col-9">
+        <div class="tech-desc">
           <span class="tech-desc-title">Основная технология</span>
           Опыт работы более года, работа с картами и тонкая оптимизация компонентов
         </div>
       </div>
 
       <!-- React -->
-      <div class='row tech-line'>
-        <div class='tech-icon col-3'>
+      <div class='tech-line'>
+        <div class='tech-icon react'>
         <img src='assets/images/react.svg' alt='React' class='img-fluid' width="170">
         </div>
-        <div class="tech-desc col-9">
+        <div class="tech-desc">
           <span class="tech-desc-title">React + WebView</span>
           Опыт работы около полугода, написание нативных приложений под WebView, работа с различными библиотеками управления состоянием
         </div>
@@ -84,9 +84,9 @@
     </div>
   </section>
 
-  <section class='page-element container-fluid scrollspy' id='projects'>
+  <section class='page-element scrollspy' id='projects'>
     <div class="my-projects content">
-    <h3 class='h3 text-center'>Проекты в которых я участвовал</h3>
+    <h3>Проекты в которых я участвовал</h3>
 
     <div class='row align-items-center justify-content-between'>
       <!-- Химвест -->
@@ -140,9 +140,9 @@
     </div>
   </section>
 
-  <section class='page-element container-fluid scrollspy' id='contacts'>
+  <section class='page-element scrollspy' id='contacts'>
     <div class='contact-me text-center content'>
-    <h3 class='h3'>Мои контакты</h3>
+    <h3>Мои контакты</h3>
     <div class='contact-links'>
       <a class='link' href='mailto:mihail.nekrytov@gmail.com'>
         <img class='icon' src='assets/images/mail.svg' alt='Моя электронная почта'>
@@ -171,25 +171,25 @@
 
   <script src='assets/js/simple-scrollspy.js'></script>
   <script>
-  window.onload = function () {
-    scrollSpy('#menu-ul', {
-    offset: 0, // in pixels
-    menuActiveTarget: 'li > a',
-    sectionClass: '.scrollspy',
-    activeClass: 'active',
-    })
+    window.onload = function () {
+      scrollSpy('#menu-ul', {
+      offset: 0, // in pixels
+      menuActiveTarget: 'li > a',
+      sectionClass: '.scrollspy',
+      activeClass: 'active',
+      })
 
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-      e.preventDefault();
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
 
-      document.querySelector(this.getAttribute('href')).scrollIntoView({
-        behavior: 'smooth',
-        block: 'start'
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
       });
-    });
-    });
-  }
+      });
+    }
   </script>
 </body>
 </html>
