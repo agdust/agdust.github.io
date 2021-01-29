@@ -78,6 +78,16 @@ p {
   margin: auto;
 }
 
+.languages {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+
+.languages__item {
+  margin: 0 5px;
+}
+
 #info {
   max-width: 800px;
 }
