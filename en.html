@@ -6,7 +6,11 @@
   <meta content='width=device-width, initial-scale=1, shrink-to-fit=no' name='viewport'>
   <title>Mikhail Nekrytov — Frontend Developer</title>
   <link href='assets/css/style.css' rel='stylesheet'>
-  <link href='/favicon.png' rel='icon' type='image/png'>
+  <link href='/favicon.ico' rel='icon' type='image/ico'>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400&display=swap" rel="stylesheet"> 
 
   <style>
     img.icon {
@@ -17,168 +21,43 @@
 </head>
 
 <body>
-
-<div class="languages no-print">
-  <a href="./index.html" class="languages__item">RU</a>
-  <span class="languages__item">EN</span>
-</div>
-
-<main class='main-content' role='main'>
-  <section class='page-element' id='info'>
-    <div class='main-info content'>
-      <img class='photo' alt='My photo' src='assets/images/photo.jpg' />
-      <div class="main-info__text">
-        <h1 class='name'>Mikhail Nekrytov</h1>
-        <h2 class='description'>Frontend Developer</h2>
-      </div>
-    </div>
-  </section>
-
-  <div class='contact-links no-print'>
-    <a class='link' href='mailto:mihail.nekrytov@gmail.com'>
-      <img class='icon' alt='My email' src='assets/images/mail.svg'>
-    </a>
-    <a class='link' href='https://www.telegram.me/agdust'>
-      <img class='icon' alt='My telegram account' src='assets/images/telegram.svg'>
-    </a>
-    <a class='link' href='https://www.github.com/agdust'>
-      <img class='icon' alt='My github account' src='assets/images/github.svg'>
-    </a>
-    <a class='link' href='https://www.vk.com/agdust'>
-      <img class='icon' alt='My VK account' src='assets/images/vk.svg'>
-    </a>
-    <a class='link' href='https://www.linkedin.com/in/agdust/'>
-      <img class='icon' alt='My LinkedIn' src='assets/images/linkedin.svg'>
-    </a>
-
-    <button class="print-button no-print" onclick="window.print();">
-      <img class='icon' alt='Print' src='assets/images/printer.svg'>
-      Print
-    </button>
+<main class='main' role='main'>
+  <div class="languages">
+    <a href="./index.html" class="languages__item">RU</a>
   </div>
 
-  <section class='page-element' id='about'>
-    <div class='text-about content'>
-      <p>
-        I'm Frontend Developer. My main tool is
-        <span class="maintool-hl"><strong>Vue</strong></span>, but I also used
-        <span class="maintool-hl"><strong>React</strong></span> and
-        <strong>React-native</strong> a bit. At a basic level I know <strong>Ruby</strong> and
-        <strong>Php</strong>. I've been in amateur development for 5 years, and for 2 years in professional.
-        Now work for <a href="https://ucs.ru">UCS</a>
-      </p>
-      <!-- <p class='highlight'>
-        And also looking for a company where 
-      </p> -->
+  <img class='avatar' alt='My photo' src='assets/images/photo.jpg' />
+
+  <div class='info'>
+    <h1 class='info__name'>Mikhail Nekrytov</h1>
+    <h2 class='info__profession'>Frontend Developer (Typescript)</h2>
+    <h3 class='info__location'>
+      Voronezh, Russia
+      <img class='icon' src='assets/images/location.svg'>
+    </h3>
+
+    <a class="info__resume" href="https://docs.google.com/document/d/1ZL4ROk-hHL3XFKtTfI5LCGQ82i0xf8LPADWg9MJCWok/edit?usp=sharing">
+      Resume
+    </a>
+
+    <div class='info__contacts'>
+      <a href='mailto:mihail.nekrytov@gmail.com'>
+        <img class='icon' src='assets/images/mail.svg' alt='My email'>
+      </a>
+      <a href='https://www.telegram.me/agdust'>
+        <img class='icon' src='assets/images/telegram.svg' alt='My contact in telegram'>
+      </a>
+      <a href='https://www.github.com/agdust'>
+        <img class='icon' src='assets/images/github.svg' alt='My page on github'>
+      </a>
+      <a href='https://www.vk.com/agdust'>
+        <img class='icon' src='assets/images/vk.svg' alt='My page on vk.com'>
+      </a>
+      <a href='https://www.linkedin.com/in/agdust/'>
+        <img class='icon' src='assets/images/linkedin.svg' alt='My page on LinkedIn'>
+      </a>
     </div>
-  </section>
-
-  <section class='page-element' id='skills'>
-    <div class="my-skills content">
-
-      <!-- Vue -->
-      <div class='tech-line tech-line--main'>
-        <div class='tech-icon vue'>
-          <img alt='VueJS' src='assets/images/vue.svg'>
-        </div>
-        <div class="tech-desc">
-          ~2 years, + work with maps
-        </div>
-      </div>
-
-      <!-- React -->
-      <div class='tech-line'>
-        <div class='tech-icon react'>
-          <img alt='React' src='assets/images/react.svg' width="170">
-        </div>
-        <div class="tech-desc">
-          ~0.5 years, + native app via WebView
-        </div>
-      </div>
-
-      <div class="other-techs">
-        <span> Typescript + ES6 / Svelte / Webpack / Babel / Git / Bash</span>
-      </div>
-    </div>
-  </section>
-
-  <section class='page-element' id='projects'>
-    <div class="my-projects content">
-      <h3>Projects</h3>
-
-      <div>
-        <!-- Химвест -->
-        <p class="project">
-          <a class="project-name chimvest" href='http://chimvest.ru/'>Chimvest</a>
-          <span class="project-description">
-          — site for Ministry of Industry and Trade of Russia. All markup from design to 1C Bitrix CMS theme
-        </span>
-        </p>
-
-        <!-- Лендинг Catapod -->
-        <p class="project">
-          <a class="project-name catapod" href='https://catapod.xyz'>
-            Catapod landing
-          </a>
-        </p>
-
-        <!-- Косари -->
-        <p class="project">
-          <a class="project-name kosari" href='https://kosari.koto.fun'>Kosari</a>
-          — little online game on PhaserJS based on the comics series with same name
-        </p>
-
-        <!-- Мастер-визит -->
-        <p class="project">
-          <a class="project-name master-visit" href='https://master-visit.ru'>Master-visit</a>.
-          This is a platform for beauty specialists. It worked on self-written PHP framework with huge
-          amount of bad code and strange decisions. I supported it for 1.5 years
-        </p>
-
-        <!-- Панель диспетчера -->
-        <p class="project">
-          <span class="project-name dis-panel">Panel for Manager</span> of drilling machines.
-          This is an internal project for managing drilling machines. The main part is the map,
-          on which all the necessary information is rendered. Vue + Quasar + Leaflet (canvas)
-        </p>
-
-        <!-- Прочее -->
-        <p class="project">
-          <span class="project-name catapod">Catapod internal projects</span>
-          built with <span class="maintool-hl"><strong>Vue</strong></span> + Leaflet + Mapbox API
-        </p>
-      </div>
-
-    </section>
-
-    <section id='contacts'>
-      <div class='contact-me text-center content'>
-      <h3>Contacts</h3>
-      <div class='contact-links contact-links--bottom'>
-        <a class='link' href='mailto:mihail.nekrytov@gmail.com'>
-          <img class='icon' src='assets/images/mail.svg' alt='Моя электронная почта'>
-          mihail.nekrytov@gmail.com
-        </a>
-        <a class='link' href='https://www.telegram.me/agdust'>
-          <img class='icon' src='assets/images/telegram.svg' alt='Мой аккаунт в telegram'>
-          telegram.me/agdust
-        </a>
-        <a class='link' href='https://www.github.com/agdust'>
-          <img class='icon' src='assets/images/github.svg' alt='Моя страница на github'>
-          github.com/agdust
-        </a>
-        <a class='link' href='https://www.vk.com/agdust'>
-          <img class='icon' src='assets/images/vk.svg' alt='Моя страница ВКонтакте'>
-          vk.com/agdust
-        </a>
-        <a class='link' href='https://www.linkedin.com/in/agdust/'>
-          <img class='icon' src='assets/images/linkedin.svg' alt='Моя страница в Linked In'>
-          linkedin.com/in/agdust/
-        </a>
-      </div>
-  
-    </div>
-  </section>
+  </div>
 </main>
 </body>
 </html>

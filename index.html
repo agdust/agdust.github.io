@@ -6,7 +6,11 @@
   <meta content='width=device-width, initial-scale=1, shrink-to-fit=no' name='viewport'>
   <title>Михаил Некрытов — Frontend Developer</title>
   <link href='assets/css/style.css' rel='stylesheet'>
-  <link href='/favicon.png' rel='icon' type='image/png'>
+  <link href='/favicon.ico' rel='icon' type='image/ico'>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400&display=swap" rel="stylesheet"> 
 
   <style>
     img.icon {
@@ -17,171 +21,43 @@
 </head>
 
 <body>
-
-<div class="languages no-print">
-  <span class="languages__item">RU</span>
-  <a href="./en.html" class="languages__item">EN</a>
-</div>
-
-<main class='main-content' role='main'>
-  <section class='page-element' id='info'>
-    <div class='main-info content'>
-      <img class='photo' alt='Моё фото' src='assets/images/photo.jpg' />
-      <div class="main-info__text">
-        <h1 class='name'>Михаил Некрытов</h1>
-        <h2 class='description'>Frontend Developer</h2>
-      </div>
-    </div>
-  </section>
-
-  <div class='contact-links no-print'>
-    <a class='link' href='mailto:mihail.nekrytov@gmail.com'>
-      <img class='icon' alt='Моя электронная почта' src='assets/images/mail.svg'>
-    </a>
-    <a class='link' href='https://www.telegram.me/agdust'>
-      <img class='icon' alt='Мой аккаунт в telegram' src='assets/images/telegram.svg'>
-    </a>
-    <a class='link' href='https://www.github.com/agdust'>
-      <img class='icon' alt='Моя страница на github' src='assets/images/github.svg'>
-    </a>
-    <a class='link' href='https://www.vk.com/agdust'>
-      <img class='icon' alt='Моя страница ВКонтакте' src='assets/images/vk.svg'>
-    </a>
-    <a class='link' href='https://www.linkedin.com/in/agdust/'>
-      <img class='icon' alt='Моя страница в Linked In' src='assets/images/linkedin.svg'>
-    </a>
-
-    <button class="print-button no-print" onclick="window.print();">
-      <img class='icon' alt='Напечатать страницу' src='assets/images/printer.svg'>
-      Напечатать
-    </button>
+<main class='main' role='main'>
+  <div class="languages">
+    <a href="./en.html" class="languages__item">EN</a>
   </div>
 
-  <section class='page-element' id='about'>
-    <div class='text-about content'>
-      <p>
-        Я — Frontend-разработчик. Мой основной инструмент это
-        <span class="maintool-hl"><strong>Vue</strong></span>, но также я работал и с
-        <span class="maintool-hl"><strong>React</strong></span> и немного с
-        <strong>React-native</strong>. На базовом уровне знаю <strong>Ruby</strong> и
-        <strong>Php</strong>. Любительской разработкой занимаюсь более 5 лет, профессиональной —
-        2 года.
-        В данный момент работаю в компании <a href="https://ucs.ru">UCS</a>
-      </p>
-      <!-- <p class='highlight'>
-        А также ищу компанию которой пригодились бы мои навыки
-      </p> -->
+  <img class='avatar' alt='Моё фото' src='assets/images/photo.jpg' />
+
+  <div class='info'>
+    <h1 class='info__name'>Михаил Некрытов</h1>
+    <h2 class='info__profession'>Frontend Developer (Typescript)</h2>
+    <h3 class='info__location'>
+      Воронеж, Россия
+      <img class='icon' src='assets/images/location.svg'>
+    </h3>
+
+    <a class="info__resume" href="https://docs.google.com/document/d/1ZmhjLs6nH1VFJDCBLDCcFHECH6hRwG_bRhAT7q6Zna0/">
+      Резюме
+    </a>
+
+    <div class='info__contacts'>
+      <a href='mailto:mihail.nekrytov@gmail.com'>
+        <img class='icon' src='assets/images/mail.svg' alt='Моя электронная почта'>
+      </a>
+      <a href='https://www.telegram.me/agdust'>
+        <img class='icon' src='assets/images/telegram.svg' alt='Мой аккаунт в telegram'>
+      </a>
+      <a href='https://www.github.com/agdust'>
+        <img class='icon' src='assets/images/github.svg' alt='Моя страница на github'>
+      </a>
+      <a href='https://www.vk.com/agdust'>
+        <img class='icon' src='assets/images/vk.svg' alt='Моя страница ВКонтакте'>
+      </a>
+      <a href='https://www.linkedin.com/in/agdust/'>
+        <img class='icon' src='assets/images/linkedin.svg' alt='Моя страница в Linked In'>
+      </a>
     </div>
-  </section>
-
-  <section class='page-element' id='skills'>
-    <div class="my-skills content">
-
-      <!-- Vue -->
-      <div class='tech-line tech-line--main'>
-        <div class='tech-icon vue'>
-          <img alt='VueJS' src='assets/images/vue.svg'>
-        </div>
-        <div class="tech-desc">
-          ~2 года, + работа с картами
-        </div>
-      </div>
-
-      <!-- React -->
-      <div class='tech-line'>
-        <div class='tech-icon react'>
-          <img alt='React' src='assets/images/react.svg' width="170">
-        </div>
-        <div class="tech-desc">
-          ~0.5 года, + нативное приложение под WebView
-        </div>
-      </div>
-
-      <div class="other-techs">
-        <span> Typescript + ES6 / Svelte / Webpack / Babel / Git / Bash</span>
-      </div>
-    </div>
-  </section>
-
-  <section class='page-element' id='projects'>
-    <div class="my-projects content">
-      <h3>Проекты</h3>
-
-      <div>
-        <!-- Химвест -->
-        <p class="project">
-          <a class="project-name chimvest" href='http://chimvest.ru/'>Химвест</a>
-          <span class="project-description">
-          — сайт для минпромторга РФ. Верстка и разработка под систему 1С Битрикс
-        </span>
-        </p>
-
-        <!-- Лендинг Catapod -->
-        <p class="project">
-          <a class="project-name catapod" href='https://catapod.xyz'>
-            Лендинг компании Catapod
-          </a>
-        </p>
-
-        <!-- Косари -->
-        <p class="project">
-          <a class="project-name kosari" href='https://kosari.koto.fun'>Косари</a>
-          — небольшая онлайн-игра на движке phaser, созданная бывшей командой Курсомира по мотивам
-          одноименной серии комиксов just for fun
-        </p>
-
-        <!-- Мастер-визит -->
-        <p class="project">
-          <a class="project-name master-visit" href='https://master-visit.ru'>Мастер-визит</a>. Это
-          площадка для мастеров в сфере красоты с большим количеством разномастного кода,
-          написанного за 7 лет разными разработчиками. Его поддержкой и развитием я занимался в
-          течение полутора лет
-        </p>
-
-        
-        <!-- Панель диспетчера -->
-        <p class="project">
-          <span class="project-name dis-panel">Панель диспетчера</span> буровых установок. Это
-          внутренний проект для управления буровыми машинами. Главной частью является карта, на которой
-          рендерится вся необходимая информация. Vue + Quasar + Leaflet (canvas)
-        </p>
-
-        <!-- Прочее -->
-        <p class="project">
-          <span class="project-name catapod">Внутренние проекты Catapod</span> на <span class="maintool-hl"><strong>Vue</strong></span> + Leaflet + Mapbox API
-        </p>
-      </div>
-
-    </section>
-
-    <section id='contacts'>
-      <div class='contact-me text-center content'>
-      <h3>Контакты</h3>
-      <div class='contact-links contact-links--bottom'>
-        <a class='link' href='mailto:mihail.nekrytov@gmail.com'>
-          <img class='icon' src='assets/images/mail.svg' alt='Моя электронная почта'>
-          mihail.nekrytov@gmail.com
-        </a>
-        <a class='link' href='https://www.telegram.me/agdust'>
-          <img class='icon' src='assets/images/telegram.svg' alt='Мой аккаунт в telegram'>
-          telegram.me/agdust
-        </a>
-        <a class='link' href='https://www.github.com/agdust'>
-          <img class='icon' src='assets/images/github.svg' alt='Моя страница на github'>
-          github.com/agdust
-        </a>
-        <a class='link' href='https://www.vk.com/agdust'>
-          <img class='icon' src='assets/images/vk.svg' alt='Моя страница ВКонтакте'>
-          vk.com/agdust
-        </a>
-        <a class='link' href='https://www.linkedin.com/in/agdust/'>
-          <img class='icon' src='assets/images/linkedin.svg' alt='Моя страница в Linked In'>
-          linkedin.com/in/agdust/
-        </a>
-      </div>
-  
-    </div>
-  </section>
+  </div>
 </main>
 </body>
 </html>
