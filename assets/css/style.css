@@ -23,9 +23,16 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding-top: 50px;
+  box-sizing: border-box;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   letter-spacing: 0.5px
 }
 
@@ -53,7 +60,26 @@ a:hover {
 
 .avatar {
   width: 35%;
+  position: relative;
+}
+
+.avatar__image {
+  width: 100%;
   border-radius: 50%;
+}
+
+.avatar__status {
+  position: absolute;
+  bottom: 0;
+  right: 20px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #333;
+  font-size: 22px;
 }
 
 .info__name {
