@@ -9,7 +9,7 @@ body {
   font-weight: 300;
   padding: 0;
   margin: 0;
-  font-family: 'Roboto Slab', serif;
+  font-family: monospace, serif;
   font-size: 10px;
 
   color: var(--text-color);
