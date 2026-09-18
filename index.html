@@ -34,19 +34,19 @@
     rel="manifest"
     href="/meta/site.webmanifest"
   >
-
-  <style>
-    img.icon {
-      max-width: 50px;
-      max-height: 50px;
-    }
-  </style>
 </head>
 
 <body>
   <div id="content">
+    <a
+      href="/en/"
+      class="languages-switch wrap"
+    >
+      English
+    </a>
+
     <main
-      class='main'
+      class='main wrap'
       role='main'
     >
       <div class="avatar">
@@ -55,78 +55,44 @@
           alt='Моё фото'
           src='/assets/images/photo.jpg'
         />
-        <div class="avatar__status">
-          🕊️
-        </div>
       </div>
 
       <div class='info'>
-
-        <div class="languages">
-          <a
-            href="/en/"
-            class="languages__item"
-          >
-            EN
-          </a>
-        </div>
         <h1 class='info__name'>Михаил Некрытов</h1>
-        <h2 class='info__profession'>Frontend Developer (Typescript)</h2>
-        <h3 class='info__location'>
-          Воронеж, Россия
-          <svg>
-            <use href="/assets/images/icons.svg#location">
-          </svg>
-        </h3>
-
-        <a
-          class="info__resume"
-          href="/cv"
-        >
-          Резюме
-        </a>
+        <h2 class='info__profession'>Frontend Developer</h2>
 
         <div class='info__contacts'>
-          <a
-            href='mailto:mikhail@nekrytov.com'
-            aria-label="Моя электронная почта"
-            class="contact-icon"
-          >
-            <svg>
-              <use href="/assets/images/icons.svg#mail">
-            </svg>
+          <a href="/cv">
+            Резюме
           </a>
-
-          <a
-            href='https://www.telegram.me/agdust'
-            aria-label='Мой аккаунт в telegram'
-            class="contact-icon"
-          >
-            <svg>
-              <use href="/assets/images/icons.svg#telegram">
-            </svg>
+          <a href='mailto:mikhail@nekrytov.com'>
+            mikhail@nekrytov.com
           </a>
-          <a
-            href='https://www.github.com/agdust'
-            aria-label='Моя страница на github'
-            class="contact-icon"
-          >
-            <svg>
-              <use href="/assets/images/icons.svg#github">
-            </svg>
+          <a href='https://t.me/agdust'>
+            t.me/agdust
           </a>
-          <a
-            href='https://www.linkedin.com/in/agdust/'
-            aria-label='Моя страница в Linked In'
-            class="contact-icon"
-          >
-            <svg>
-              <use href="/assets/images/icons.svg#linkedin">
-            </svg>
+          <a href='https://github.com/agdust'>
+            github.com/agdust
+          </a>
+          <a href='https://linkedin.com/in/agdust/'>
+            linkedin.com/agdust
           </a>
         </div>
       </div>
     </main>
+
+    <!-- <section class="projects wrap">
+      <h2 class="projects__title">Проекты</h2>
+      <ul class="projects__list">
+        <li class="projects__item">
+          <a
+            class="projects__link"
+            href="/projects/project-doctor/"
+          >Project Doctor</a>
+          <p class="projects__description">CLI визард для удобной настройки проектов и внедрения best practices.</p>
+        </li>
+      </ul>
+    </section> -->
   </div>
 </body>
 

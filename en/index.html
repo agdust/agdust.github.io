@@ -34,19 +34,17 @@
     rel="manifest"
     href="/meta/site.webmanifest"
   >
-
-  <style>
-    img.icon {
-      max-width: 50px;
-      max-height: 50px;
-    }
-  </style>
 </head>
 
 <body>
   <div id="content">
+    <a
+      href="/"
+      class="languages-switch wrap"
+    >На русском</a>
+
     <main
-      class='main'
+      class='main wrap'
       role='main'
     >
       <div class="avatar">
@@ -55,70 +53,45 @@
           alt='My photo'
           src='/assets/images/photo.jpg'
         />
-        <div class="avatar__status">
-          🕊️
-        </div>
       </div>
 
       <div class='info'>
-        <div class="languages">
-          <a
-            href="/"
-            class="languages__item"
-          >RU</a>
-        </div>
         <h1 class='info__name'>Mikhail Nekrytov</h1>
-        <h2 class='info__profession'>Frontend Developer (Typescript)</h2>
-        <h3 class='info__location'></h3>
-
-        <a
-          class="info__resume"
-          href="/en/cv"
-        >
-          Open CV
-        </a>
+        <h2 class='info__profession'>Frontend Developer</h2>
 
         <div class='info__contacts'>
-          <a
-            href='mailto:mikhail@nekrytov.com'
-            aria-label="My email"
-            class="contact-icon"
-          >
-            <svg>
-              <use href="/assets/images/icons.svg#mail">
-            </svg>
+          <a href="/en/cv">
+            Open CV
           </a>
-
-          <a
-            href='https://www.telegram.me/agdust'
-            aria-label='My contact in telegram'
-            class="contact-icon"
-          >
-            <svg>
-              <use href="/assets/images/icons.svg#telegram">
-            </svg>
+          <a href='mailto:mikhail@nekrytov.com'>
+            mikhail@nekrytov.com
           </a>
-          <a
-            href='https://www.github.com/agdust'
-            aria-label='My page on github'
-            class="contact-icon"
-          >
-            <svg>
-              <use href="/assets/images/icons.svg#github">
-            </svg>
+          <a href='https://t.me/agdust'>
+            t.me/agdust
           </a>
-          <a
-            href='https://www.linkedin.com/in/agdust/'
-            aria-label='My page on LinkedIn'
-            class="contact-icon"
-          >
-            <svg>
-              <use href="/assets/images/icons.svg#linkedin">
-            </svg>
+          <a href='https://github.com/agdust'>
+            github.com/agdust
+          </a>
+          <a href='https://linkedin.com/in/agdust/'>
+            linkedin.com/agdust
           </a>
         </div>
       </div>
     </main>
+
+    <!-- <section class="projects wrap">
+      <h2 class="projects__title">Projects</h2>
+      <ul class="projects__list">
+        <li class="projects__item">
+          <a
+            class="projects__link"
+            href="/en/projects/project-doctor/"
+          >Project Doctor</a>
+          <p class="projects__description">An interactive CLI tool for configuring healthy and robust project setups.
+          </p>
+        </li>
+      </ul>
+    </section> -->
   </div>
 </body>
 

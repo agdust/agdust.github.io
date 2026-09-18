@@ -1,28 +1,26 @@
 :root {
-  --bg-color: #f5f5f5;
-  --text-color: #333;
-  --link-color: #339;
-  --link-color-hover: #55b;
-  --accent-bg: #333;
+  --bg-color: #fff;
+  --text-color: #000;
+  --border-color: #000;
+  --font-size-title: 36px;
+  --font-size-main: 18px;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg-color: #111;
-    --text-color: #ccc;
-    --link-color: #ccf;
-    --link-color-hover: #aaf;
-    --accent-bg: #333;
+    --bg-color: #000;
+    --text-color: #fff;
+    --border-color: #fff;
   }
 }
 
 html,
 body {
-  font-weight: 300;
   padding: 0;
   margin: 0;
-  font-family: monospace, serif;
-  font-size: 10px;
+  font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif;
+  font-size: var(--font-size-main);
+  font-weight: normal;
 
   color: var(--text-color);
 
@@ -34,8 +32,8 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  padding: 50px 0;
+  justify-content: flex-start;
+  padding: 80px 0 50px;
   box-sizing: border-box;
 }
 
@@ -45,27 +43,36 @@ h3,
 h4,
 h5,
 h6 {
-  letter-spacing: 0.5px
+  letter-spacing: 0.5px;
+  font-weight: 400;
 }
 
 a {
-  color: var(--link-color);
-  text-decoration: none;
+  color: var(--text-color);
+  text-decoration: underline;
 }
 
 a:hover {
-  color: var(--link-color-hover);
+  opacity: 0.6;
+}
+
+.wrap {
+  max-width: 660px;
+  min-width: 300px;
+  margin: 0 auto;
+}
+
+.languages-switch {
+  display: block;
+  text-align: right;
+  margin-bottom: 10px;
 }
 
 .main {
-  margin: 0 auto;
   display: flex;
   flex-direction: row;
   align-items: start;
   position: relative;
-
-  max-width: 800px;
-  min-width: 300px;
 
   min-height: 300px;
 }
@@ -74,58 +81,24 @@ a:hover {
   min-width: 150px;
   width: 35%;
   max-width: 250px;
-  position: relative;
   margin-right: 20px;
 }
 
 .avatar__image {
   width: 100%;
-  border-radius: 50%;
-}
-
-.avatar__status {
-  position: absolute;
-  bottom: 0;
-  right: 20px;
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: var(--accent-bg);
-  font-size: 22px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border: 2px solid var(--border-color);
 }
 
 .info__name {
-  font-size: 4rem;
+  font-size: var(--font-size-title);
   margin: 0 0 10px 0;
+  line-height: 0.8;
 }
 
 .info__profession {
-  font-size: 2rem;
-  font-weight: 300;
   margin: 0 0 10px 0;
-}
-
-.info__location {
-  font-size: 1.4rem;
-  font-weight: 300;
-}
-
-.info__location svg {
-  width: 14px;
-  height: 14px;
-  color: inherit;
-}
-
-.languages {
-  font-size: 18px;
-  text-decoration: underline;
-}
-
-.languages__item {
-  margin: 0 5px;
 }
 
 .info {
@@ -133,43 +106,55 @@ a:hover {
   flex: 1 1 auto;
 }
 
-.info__resume {
-  font-size: 1.8rem;
-  border: 1px solid var(--link-color);
-  border-radius: 2px;
-  padding: 2px 10px;
-  margin-top: 10px;
-  display: inline-block;
-}
-
 .info__contacts {
-  margin: 30px auto 0;
+  margin: 30px 0 0;
   display: flex;
-  justify-content: flex-end;
-
-  text-align: center;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 .info__contacts > a {
+  line-height: 1.8;
+}
+
+.projects {
+  margin-top: 60px;
+  padding: 0 40px;
+}
+
+.projects__title {
+  margin: 0 0 20px 0;
+}
+
+.projects__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.projects__item {
+  margin-bottom: 16px;
+}
+
+.projects__description {
+  margin-top: 12px;
+}
+
+.projects-page {
+  padding: 0 20px;
+}
+
+.projects-page__back {
   display: inline-block;
-  line-height: 30px;
-  height: 30px;
-  width: 30px;
-  margin-left: 20px;
+  margin-bottom: 30px;
 }
 
-.contact-icon {
-  width: 30px;
-  height: 30px;
-  color: var(--link-color);
+.projects-page__title {
+  margin: 0 0 20px 0;
 }
 
-.contact-icon svg {
-  width: 100%;
-  height: 100%;
+.projects-page__description {
+  line-height: 1.6;
 }
 
 @media screen and (max-width: 720px) {
@@ -178,20 +163,20 @@ a:hover {
   }
 
   .info {
-    margin-top: 30px;
+    margin: 30px auto 0;
     text-align: center;
   }
 
-  .info__name {
-    font-size: 2.5rem;
+  .avatar {
+    margin: 0 auto;
   }
 
-  .info__profession {
-    font-size: 1.8rem;
+  .languages-switch {
+    text-align: center;
   }
 
   .info__contacts {
-    justify-content: center;
+    align-items: center;
   }
 
   .avatar {
